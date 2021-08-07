@@ -684,7 +684,7 @@
     color: var(--black--color);
     font-size: 1.4rem;
     text-align: left;
-    padding: 8px 8px;
+    margin: 8px 0 8px 12px;
     color: #999;
     font-weight: 400;
 }
@@ -693,6 +693,7 @@
     padding-left: 0;
     list-style: none;
     color: var(--black--color);
+    margin: 0;
 }
 
 .header__cart-item{
@@ -710,7 +711,7 @@
 }
 
 .header__cart-item-head{
-
+    
 }
 
 .header__cart-item-name{
