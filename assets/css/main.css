@@ -39,7 +39,7 @@
 }
 
 .header__navbar-user-name{
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.6rem;
     font-weight: 400;
 }
@@ -107,7 +107,7 @@
 .header__navbar-item,
 .header__navbar-item-link{
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--white--color);
     font-weight: 300;    
     text-decoration: none;
@@ -147,6 +147,10 @@
 .header__navbar-icon-link{
     color: var(--white--color);
     text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2){
+    margin-left: 2px;
 }
 
 .header__navbar-icon{
@@ -497,7 +501,10 @@
 .header__icon{
     width: 200px;
 }
-
+.header__link{
+    text-decoration: none;
+    color: transparent;
+}
 
 .header__icon-img{
     width: 150px;
@@ -585,7 +592,7 @@
 
 .header__search-option{
     position: absolute;
-    top: 130%;
+    top: 140%;
     right: 0;
     padding-left: 0;
     list-style: none;
