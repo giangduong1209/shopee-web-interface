@@ -25,6 +25,10 @@ html{
     margin: 0 auto;
 }
 
+.app_content{
+    padding: 36px;
+}
+
 .grid__full--width{
     width: 100%;
 }
