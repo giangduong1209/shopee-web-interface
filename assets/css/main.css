@@ -874,6 +874,7 @@
 }
 
 .category__heading{
+    margin: 0;
     color: var(--text-color);
     border-radius: 2px;
     font-size: 1.7rem;
