@@ -26,7 +26,7 @@ html{
 }
 
 .app_content{
-    padding: 36px;
+    padding: 36px 0px;
 }
 
 .grid__full--width{
@@ -110,16 +110,78 @@ html{
 }
 
 .btn{
-    width: 150px;
+    min-width: 150px;
     border: none;
     background-color: var(--white--color);
     border-radius: 2px;
     font-size: 1.4rem;
     cursor: pointer;
     padding: 12px 0px;
-    min-width: 142px;
 }
 
 .btn:hover{
     opacity: .8;
+}
+
+.home-select{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+    border: none;
+    background-color: var(--white--color);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 12px 12px;
+}
+
+.home-select:hover .home-select__list{
+    display: block;
+}
+
+.home-select__list{
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 110%;
+    background-color: var(--white--color);
+    list-style: none;
+    padding-left: 0px;
+    border-radius: 2px;
+    margin: 0;
+}
+
+.home-select__list::before{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 19px;
+    position: absolute;
+    top: -17%;
+    left: 0;
+    right: 0;
+}
+
+.home-select__link{
+    display: block;
+    padding: 12px 12px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.home-select__item:hover .home-select__link{
+    background-color: #FAFAFA;
+    color: var(--primary-color);
+}
+
+.home-select__link:first-child{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.home-select__link:last-child{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
