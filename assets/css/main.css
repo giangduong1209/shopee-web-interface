@@ -993,3 +993,81 @@
 .home-filter__page-btn--disable .home-filter__page-btn{
     color: #ccc;
 }
+
+.home-product-item{
+    margin-top: 10px;
+    background-color: var(--white--color);
+}
+
+.home-product-item__img{
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100%;
+    background-position: center;
+}
+
+.home-product-item__name{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin: 10px;
+    font-weight: 400;
+    line-height: 1.8rem;
+    height: 3.6rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.home-product-item__price{
+
+}
+
+.home-product-item__price-old{
+
+}
+
+.home-product-item__price-current{
+
+}
+
+.home-product-item__action{
+
+}
+
+.home-product-item__like{
+
+}
+
+.home-product-item__rate{
+
+}
+
+.home_product-item__address{
+
+}
+
+.home_product-item__address-name{
+
+}
+
+.home_product-item__favourite{
+
+}
+
+.home_product-item__favourite-name{
+
+}
+
+.home_product-item__discount{
+
+}
+
+.home_product-item__discount-percent{
+
+}
+
+.home_product-item__discount-title{
+
+}
