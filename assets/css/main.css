@@ -1009,7 +1009,7 @@
 .home-product-item__name{
     font-size: 1.4rem;
     color: var(--text-color);
-    margin: 10px;
+    margin: 10px 10px 4px;
     font-weight: 400;
     line-height: 1.8rem;
     height: 3.6rem;
@@ -1020,36 +1020,104 @@
     -webkit-line-clamp: 2;
 }
 
-.home-product-item__price{
+.home-product__des{
+    display: flex;
+    margin-left: 10px;
+    cursor: default;
+    user-select: none;   
+}
 
+.home-product__des-item{
+    min-width: 67px;
+    color: red;
+    padding: 1px;
+    border: 1px solid red;
+    box-shadow: 0.05px 0.05px;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.home__product-item__price-frame{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 10px 6px 0;
 }
 
 .home-product-item__price-old{
-
+    font-size: 1.4rem;
+    margin-left: 10px;
+    color: var(--text-color);
+    text-decoration: line-through;
 }
 
 .home-product-item__price-current{
+    margin-left: 10px;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
 
+.home-product-item__ship-icon{
+    font-size: 1.5rem;
+    color: #00bfa5;
 }
 
 .home-product-item__action{
-
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px 6px 10px;
 }
 
 .home-product-item__like{
+    font-size: 1.3rem;
+}
 
+.home-product-item__like-icon-empty{
+    display: block;
+}
+
+i.home-product-item__like-icon-fill{
+    color: red;
+    display: none;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-fill{
+    display: inline-block;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-empty{
+    display: none;
 }
 
 .home-product-item__rate{
+    transform: scale(0.8);
+    transform-origin: right;
+    cursor: default;
+    color: #d5d5d5;
+    margin: 1px 0 0 auto;
+}
 
+.home-product-item__rate-star--gold{
+    color: var(--star--color);
+}
+
+.home-product-item__sold{
+    font-size: 1.2rem;
+    margin-left: 6px;
 }
 
 .home_product-item__address{
-
+    display: flex;
+    margin-right: 10px;
 }
 
 .home_product-item__address-name{
-
+    font-size: 1.2rem;
+    margin-left: auto;
+    color: #aeaeae;
+    font-weight: 400;
 }
 
 .home_product-item__favourite{
