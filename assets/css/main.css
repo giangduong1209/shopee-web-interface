@@ -995,6 +995,7 @@
 }
 
 .home-product-item{
+    position: relative;
     margin-top: 10px;
     background-color: var(--white--color);
 }
@@ -1121,10 +1122,37 @@ i.home-product-item__like-icon-fill{
 }
 
 .home_product-item__favourite{
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    line-height: 1.6rem;
+}
 
+.home_product-item__favourite::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 16px;
+    border-top: 4px solid currentColor;
+    border-left: 4px solid transparent;
+    filter: brightness(60%);
+}
+
+.home_product-item__favourite i{
+    margin: 0 3px 0 3px;
+    font-size: 1rem;
+    color: var(--white--color);
 }
 
 .home_product-item__favourite-name{
+    padding-right: 4px;
+    color: var(--white--color);
+    font-size: 1.2rem;
+    font-weight: 500;
 
 }
 
