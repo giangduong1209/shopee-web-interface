@@ -1157,13 +1157,36 @@ i.home-product-item__like-icon-fill{
 }
 
 .home_product-item__discount{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 33px;
+    color: rgb(255, 216, 57, 1);
+    background-color: currentColor;
+    text-align: center;
+}
 
+.home_product-item__discount::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-width: 0 18px 4px;
+    border-style: solid;
+    border-color: transparent currentColor transparent currentColor;
 }
 
 .home_product-item__discount-percent{
-
+    font-size: 1.2rem;
+    color: #ee4d2d;
+    font-weight: 500;
 }
 
 .home_product-item__discount-title{
-
+    position: relative;
+    top: -3px;
+    font-size: 1.2rem;
+    color: var(--white--color);
+    font-weight: 500;
 }
