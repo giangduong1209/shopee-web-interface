@@ -141,6 +141,7 @@ html{
     border-radius: 2px;
     font-size: 1.4rem;
     padding: 12px 12px;
+    z-index: 1;
 }
 
 .home-select:hover .home-select__list{
@@ -158,6 +159,7 @@ html{
     padding-left: 0px;
     border-radius: 2px;
     margin: 0;
+    
 }
 
 .home-select__list::before{
