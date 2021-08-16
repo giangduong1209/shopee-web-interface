@@ -109,7 +109,7 @@
     color: var(--white--color);
     font-weight: 300;    
     text-decoration: none;
-    z-index: 1;
+    z-index: 3;
 }
 
 .header__navbar-item,
@@ -542,6 +542,7 @@
     outline: none;
     padding: 0 16px;
     font-size: 1.4rem;
+
 }
 
 .header__search-selection{
@@ -549,6 +550,8 @@
     padding-left: 16px;
     position: relative;
     cursor: pointer;
+    z-index: 1;
+
 }
 
 .header__search-selection-label{
@@ -666,6 +669,7 @@
     border-radius: 2px;
     display: none;
     overflow: hidden;
+    z-index: 2;
 }
 
 .header__search-history-header{
@@ -733,7 +737,7 @@
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.8);
     display: none;
     cursor: default;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header__cart-list--no-cart{
@@ -781,7 +785,9 @@
 }
 
 .header__cart-list-item{
+    height: 65vh;
     padding-left: 0;
+    overflow-y: scroll;
     list-style: none;
     color: var(--black--color);
     margin: 0;
@@ -815,10 +821,19 @@
 }
 
 .header__cart-item-name{
+    flex: 1;
+    text-align: left;
+    padding-right: 16px;
+    line-height: 2rem;
+    height: 2rem;
     margin: 0;
     font-size: 1.4rem;
     color: var(--text-color);
     font-weight: 400;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 .header__cart-item-price{
@@ -915,14 +930,9 @@
     font-size: 1.4rem;
     display: block;
     padding: 10px 30px;
-    transition: right linear .1s;
     right: 0;
 }
 
-.category-item__link:hover {
-    right: -4px;
-    color: var(--primary-color);
-}
 
 .home-filter{
     display: flex;
