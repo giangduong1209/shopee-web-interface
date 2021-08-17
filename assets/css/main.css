@@ -1212,3 +1212,8 @@ i.home-product-item__like-icon-fill{
     color: var(--white--color);
     font-weight: 500;
 }
+
+
+.home-product__pagination{
+    margin: 50px 0 18px 0;
+}
